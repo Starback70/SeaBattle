@@ -1,3 +1,5 @@
+package ru.izotov.game;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
@@ -8,9 +10,9 @@ public class SeaBattle {
     JFrame frame;
     Canvas canvas;
 
-    final int CELL_SIZE = 20;
-    final int FIELD_WIDTH = CELL_SIZE * 10;
-    final int FIELD_HEIGHT = CELL_SIZE * 10;
+    static final int CELL_SIZE = 20;
+    static final int FIELD_WIDTH = CELL_SIZE * 30;
+    static final int FIELD_HEIGHT = CELL_SIZE * 30;
 
     int key;
 
@@ -19,7 +21,7 @@ public class SeaBattle {
         frame = new JFrame("Sea Battle");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(FIELD_WIDTH, FIELD_HEIGHT);
-        frame.setLocation(300, 500);
+//        frame.setLocationRelativeTo(null);
         frame.setResizable(false);
 
         canvas = new Canvas();
