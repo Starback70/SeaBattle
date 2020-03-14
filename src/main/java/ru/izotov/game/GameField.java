@@ -7,7 +7,7 @@ import static ru.izotov.game.SeaBattle.CELL_SIZE;
 public class GameField {
     void paintField(Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
-        g2.setStroke(new BasicStroke(2));
+        g2.setStroke(new BasicStroke(1));
         g2.setColor(Color.black);
         int start1 = 2;
         int end1 = start1 + 10;
@@ -62,29 +62,92 @@ public class GameField {
                 start1 * CELL_SIZE + CELL_SIZE * 3 / 2 - CELL_SIZE / 4 + CELL_SIZE * 13,
                 litera1Y);
         g2.drawString("В",
-                start1 * CELL_SIZE + CELL_SIZE * 5 / 2 - CELL_SIZE / 4,
+                start1 * CELL_SIZE + CELL_SIZE * 5 / 2 - CELL_SIZE / 4 + CELL_SIZE * 13,
                 litera1Y);
         g2.drawString("Г",
-                start1 * CELL_SIZE + CELL_SIZE * 7 / 2 - CELL_SIZE / 4,
+                start1 * CELL_SIZE + CELL_SIZE * 7 / 2 - CELL_SIZE / 4 + CELL_SIZE * 13,
                 litera1Y);
         g2.drawString("Д",
-                start1 * CELL_SIZE + CELL_SIZE * 9 / 2 - CELL_SIZE / 4,
+                start1 * CELL_SIZE + CELL_SIZE * 9 / 2 - CELL_SIZE / 4 + CELL_SIZE * 13,
                 litera1Y);
         g2.drawString("Е",
-                start1 * CELL_SIZE + CELL_SIZE * 11 / 2 - CELL_SIZE / 4,
+                start1 * CELL_SIZE + CELL_SIZE * 11 / 2 - CELL_SIZE / 4 + CELL_SIZE * 13,
                 litera1Y);
         g2.drawString("Ж",
-                start1 * CELL_SIZE + CELL_SIZE * 13 / 2 - CELL_SIZE / 4,
+                start1 * CELL_SIZE + CELL_SIZE * 13 / 2 - CELL_SIZE / 4 + CELL_SIZE * 13,
                 litera1Y);
         g2.drawString("З",
-                start1 * CELL_SIZE + CELL_SIZE * 15 / 2 - CELL_SIZE / 4,
+                start1 * CELL_SIZE + CELL_SIZE * 15 / 2 - CELL_SIZE / 4 + CELL_SIZE * 13,
                 litera1Y);
         g2.drawString("И",
-                start1 * CELL_SIZE + CELL_SIZE * 17 / 2 - CELL_SIZE / 4,
+                start1 * CELL_SIZE + CELL_SIZE * 17 / 2 - CELL_SIZE / 4 + CELL_SIZE * 13,
                 litera1Y);
         g2.drawString("К",
-                start1 * CELL_SIZE + CELL_SIZE * 19 / 2 - CELL_SIZE / 4,
+                start1 * CELL_SIZE + CELL_SIZE * 19 / 2 - CELL_SIZE / 4 + CELL_SIZE * 13,
                 litera1Y);
 
+        int number1X = start1 * CELL_SIZE - CELL_SIZE * 3 / 4;
+        g2.drawString("1",
+                number1X,
+                start1 * CELL_SIZE + CELL_SIZE - CELL_SIZE / 4);
+        g2.drawString("2",
+                number1X,
+                start1 * CELL_SIZE + CELL_SIZE * 2 - CELL_SIZE / 4);
+        g2.drawString("3",
+                number1X,
+                start1 * CELL_SIZE + CELL_SIZE * 3 - CELL_SIZE / 4);
+        g2.drawString("4",
+                number1X,
+                start1 * CELL_SIZE + CELL_SIZE * 4 - CELL_SIZE / 4);
+        g2.drawString("5",
+                number1X,
+                start1 * CELL_SIZE + CELL_SIZE * 5 - CELL_SIZE / 4);
+        g2.drawString("6",
+                number1X,
+                start1 * CELL_SIZE + CELL_SIZE * 6 - CELL_SIZE / 4);
+        g2.drawString("7",
+                number1X,
+                start1 * CELL_SIZE + CELL_SIZE * 7 - CELL_SIZE / 4);
+        g2.drawString("8",
+                number1X,
+                start1 * CELL_SIZE + CELL_SIZE * 8 - CELL_SIZE / 4);
+        g2.drawString("9",
+                number1X,
+                start1 * CELL_SIZE + CELL_SIZE * 9 - CELL_SIZE / 4);
+        g2.drawString("10",
+                number1X - CELL_SIZE / 4,
+                start1 * CELL_SIZE + CELL_SIZE * 10 - CELL_SIZE / 4);
+
+        int number2X = start1 * CELL_SIZE - CELL_SIZE * 3 / 4 + CELL_SIZE * 13;
+        g2.drawString("1",
+                number2X,
+                start1 * CELL_SIZE + CELL_SIZE - CELL_SIZE / 4);
+        g2.drawString("2",
+                number2X,
+                start1 * CELL_SIZE + CELL_SIZE * 2 - CELL_SIZE / 4);
+        g2.drawString("3",
+                number2X,
+                start1 * CELL_SIZE + CELL_SIZE * 3 - CELL_SIZE / 4);
+        g2.drawString("4",
+                number2X,
+                start1 * CELL_SIZE + CELL_SIZE * 4 - CELL_SIZE / 4);
+        g2.drawString("5",
+                number2X,
+                start1 * CELL_SIZE + CELL_SIZE * 5 - CELL_SIZE / 4);
+        g2.drawString("6",
+                number2X,
+                start1 * CELL_SIZE + CELL_SIZE * 6 - CELL_SIZE / 4);
+        g2.drawString("7",
+                number2X,
+                start1 * CELL_SIZE + CELL_SIZE * 7 - CELL_SIZE / 4);
+        g2.drawString("8",
+                number2X,
+                start1 * CELL_SIZE + CELL_SIZE * 8 - CELL_SIZE / 4);
+        g2.drawString("9",
+                number2X,
+                start1 * CELL_SIZE + CELL_SIZE * 9 - CELL_SIZE / 4);
+        g2.drawString("10",
+                number2X - CELL_SIZE / 4,
+                start1 * CELL_SIZE + CELL_SIZE * 10 - CELL_SIZE / 4);
     }
 }
